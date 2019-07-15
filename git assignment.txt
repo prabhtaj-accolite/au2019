@@ -1,0 +1,32 @@
+1.
+(i) A new directory is created with a copy of the remote server on local.
+(ii) Remote tracking branches are created for all branches.
+
+
+git commit - records changes to the local repository.
+git push - pushes the changes of current branch to the upstream server (remote).
+
+
+Both the changes will be pushed. Git will check for merge conflicts but, since the changes do not overlap, it will be resolved automatically.
+
+2.
+
+repo repository:
+
+	branch master
+
+	repo created--------> O -------------> O -------------> HEAD (origin/master)
+			commit 75b71a6	  commit a4eb735
+
+
+3.
+
+repo repository:
+
+			commit 75b71a6	  commit a4eb735
+	repo created--------> O -------------> O -------------> HEAD (origin/master)
+					       |
+					       |
+					       |
+					       -------------->O ----------> HEAD (origin/my-branch)
+							commit ac52bf1
