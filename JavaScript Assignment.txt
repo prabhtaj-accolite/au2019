@@ -12,7 +12,7 @@ var foo = {
 var foo = {	
    title: 'world',
    show() {
-      return ['', ''].map(function(a) { return 'hello ' + this.title });
+      return ['', ''].map(function(a) { return 'hello ' + this.foo.title });
    }
 };
 ==============
