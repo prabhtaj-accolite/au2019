@@ -1,0 +1,7 @@
+<mat-form-field *ngIf="showUpdateField">
+    <input matInput [(ngModel)]="element.name" (keyup)="updateElemBackend(element)" placeholder="New Name">
+</mat-form-field>
+<button mat-button color="secondary" class="example-button" (click)="toggleUpdate(element.id)">Update</button>
+<div class="example-element-name"> {{element.position}} </div>
+<div class="example-element-name"> {{element.birthday}} </div>
+<div class="example-element-name"> {{element.country}} </div>

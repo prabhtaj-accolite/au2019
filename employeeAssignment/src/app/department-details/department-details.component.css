@@ -1,0 +1,8 @@
+.example-element-name {
+    display: block;
+    padding: 16px
+}
+.example-button {
+    float: right;
+    display: inline-flex
+}
