@@ -1,0 +1,26 @@
+The company has seen a lot of people leave the company recently and they would like to understand why that's happening. They have collected historical data on employees and they would like you to build a model that is able to predict which employee will leave next. The would like a model that is better than random guessing. They also prefer false negatives than false positives, in this first phase. Fields in the dataset include:
+
+- Employee satisfaction level
+- Last evaluation
+- Number of projects
+- Average monthly hours
+- Time spent at the company
+- Whether they have had a work accident
+- Whether they have had a promotion in the last 5 years
+- Department
+- Salary
+- Whether the employee has left
+
+Your goal is to predict the binary outcome variable `left` using the rest of the data. Since the outcome is binary, this is a classification problem. Here are some things you may want to try out:
+
+1. load the dataset at ../data/HR_comma_sep.csv, inspect it with `.head()`, `.info()` and `.describe()`.
+- Establish a benchmark: what would be your accuracy score if you predicted everyone stay?
+- Check if any feature needs rescaling. You may plot a histogram of the feature to decide which rescaling method is more appropriate.
+- convert the categorical features into binary dummy columns. You will then have to combine them with the numerical features using `pd.concat`.
+- do the usual train/test split with a 20% test size
+- play around with learning rate and optimizer
+- check the confusion matrix, precision and recall
+- check if you still get the same results if you use a 5-Fold cross validation on all the data
+
+
+2. Apply deep learning techniques to this data and see if the result improves
